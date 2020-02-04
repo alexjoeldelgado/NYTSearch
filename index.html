@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYT Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron col-8 m-auto">
+        <h1 class="m-auto"><i class="fas fa-newspaper"></i>New York Times Search</h1>
+    </div>
+    <br>
+    <div class="card col-8 m-auto p-0">
+        <div class="card-header col-12 m-auto">
+          Search Parameters
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="inputSearchTerm">Search Term:</label>
+                <input type="text" class="form-control" id="searchTerm" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="inputNumber">Number of Records to Retrieve</label>
+                <select id="inputNumber" class="form-control">
+                    <option selected>1</option>
+                    <option>5</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputStartYear">Start Year (Optional) :</label>
+                <input type="text" class="form-control" id="searchStartYear" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="inputEndYear">End Year (Optional) :</label>
+                <input type="text" class="form-control" id="searchEndYear" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+            <button type="submit" class="btn btn-secondary">Clear</button>
+        </div>
+    </div>
+    <br>
+    <div class="card col-8 m-auto p-0">
+        <div class="card-header col-12 m-auto">
+            Top Articles
+        </div>
+        <div class="card-body" id="topArticles">
+            <!-- insert articles here -->
+        </div>
+    </div>
+</body>
+</html>
